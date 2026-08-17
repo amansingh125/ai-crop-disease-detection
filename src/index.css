@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #FDFCFB;
+    color: #2D3436;
+  }
+}
+
+/* Natural Tones Custom Palette Utilities */
+.bg-natural-bg { background-color: #FDFCFB; }
+.bg-natural-card { background-color: #FFFFFF; }
+.bg-natural-card-subtle { background-color: #F8F9F8; }
+.bg-natural-forest { background-color: #3A5A40; }
+.bg-natural-sage { background-color: #588157; }
+.bg-natural-sage-light { background-color: #E8F0E6; }
+.bg-natural-terracotta { background-color: #D4A373; }
+.bg-natural-terracotta-hover { background-color: #BC8A5F; }
+
+.text-natural-forest { color: #3A5A40; }
+.text-natural-sage { color: #588157; }
+.text-natural-terracotta { color: #D4A373; }
+.text-natural-charcoal { color: #2D3436; }
+.text-natural-muted { color: #7F8C8D; }
+
+.border-natural { border-color: #E8E1D9; }
+.border-natural-sage { border-color: #A3B18A; }

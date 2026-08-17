@@ -1,0 +1,6 @@
+{
+  "name": "AI Crop Disease Detection System",
+  "description": "AI-powered crop leaf disease diagnosis system with bilingual support (Hindi & English), voice assistant, weather-based disease risk prediction, eco-friendly remedies, medicine purchasing, and health reports.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

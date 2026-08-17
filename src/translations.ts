@@ -1,0 +1,345 @@
+import { Language } from './types';
+
+export const translations = {
+  en: {
+    appTitle: 'AI Crop Disease Detection System',
+    appSubtitle: 'Protect your harvest with fast, AI-powered leaf disease diagnosis & treatment recommendations',
+    navHome: 'Home',
+    navAnalyze: 'Analyze Leaf',
+    navHistory: 'History & Analytics',
+    navWeather: 'Weather & Risk',
+    navAlerts: 'Disease Alerts',
+    navVoice: 'AI Voice Assistant',
+    navAbout: 'Guide & Info',
+    
+    // Hero
+    heroBadge: 'Smart Agriculture AI 🌿',
+    heroTitle: 'Instant Crop Disease Diagnosis Powered by Artificial Intelligence',
+    heroDesc: 'Upload or capture a photo of an affected crop leaf to identify diseases, assess severity, and receive organic & chemical treatment solutions.',
+    startScanBtn: 'Scan Crop Leaf Now',
+    viewDashboardBtn: 'View History & Analytics',
+    openVoiceBtn: 'Talk to Kisan Voice Assistant',
+    
+    // Quick Features
+    featFastTitle: 'Instant Diagnosis',
+    featFastDesc: 'Get accurate disease identification in seconds using advanced computer vision.',
+    featMultilingualTitle: 'Hindi & English',
+    featMultilingualDesc: 'Full support for English and Hindi so farmers can easily understand remedies.',
+    featTreatmentTitle: 'Actionable Remedies',
+    featTreatmentDesc: 'Organic & chemical treatments with step-by-step preventive guidance.',
+    featWeatherTitle: 'Weather Outbreak Alerts',
+    featWeatherDesc: 'Predict fungal and pest risks based on real-time temperature and humidity.',
+    
+    // Sample Test Images
+    samplesTitle: 'Or Test with Sample Crop Leaf Photos',
+    samplesSub: 'Select a sample leaf image below to run an instant demonstration analysis:',
+    sampleTomato: 'Tomato - Early Blight',
+    samplePotato: 'Potato - Late Blight',
+    sampleWheat: 'Wheat - Rust Disease',
+    sampleRice: 'Rice - Brown Spot',
+    sampleApple: 'Apple - Healthy Leaf',
+
+    // Uploader
+    uploadTitle: 'Upload or Capture Crop Leaf Image',
+    uploadDesc: 'Drag & drop a leaf picture or click to browse (JPG, PNG, WEBP, up to 10MB)',
+    takePhoto: 'Take Photo with Camera',
+    browseFiles: 'Browse Photo File',
+    analyzingText: 'Analyzing leaf image with Artificial Intelligence... Identifying pathogens, severity & remedies',
+    invalidFileType: 'Invalid file type. Please upload a valid image (JPEG, PNG, WEBP).',
+    fileTooLarge: 'File is too large. Maximum size is 10MB.',
+    
+    // Result Card
+    resultTitle: 'Diagnosis Results & Health Report',
+    cropType: 'Crop Name',
+    diseaseDetected: 'Disease Identified',
+    healthyStatus: 'Healthy Leaf Detected! 🎉',
+    confidenceScore: 'AI Confidence Score',
+    severityLabel: 'Severity Level',
+    symptomsTitle: 'Observed Symptoms',
+    causesTitle: 'Probable Causes & Pathogens',
+    organicTitle: 'Eco-Friendly / Organic Solutions',
+    chemicalTitle: 'Chemical Treatment & Fungicides',
+    preventionTitle: 'Preventive Measures',
+    summaryTitle: 'Overview Summary',
+    downloadPdf: 'Download Health Report (PDF)',
+    generatingPdf: 'Generating PDF Report...',
+    reportTitle: 'Crop Health Pathology Report',
+    reportCertificate: 'Official AI Diagnostic Certificate',
+    generatedOn: 'Generated on',
+    dosage: 'Recommended Dosage',
+    preparation: 'Preparation & Application Guide',
+    precautions: 'Safety Precautions',
+    printReport: 'Print / Save Report',
+    analyzeAnother: 'Analyze Another Crop Leaf',
+    listenAloud: 'Listen Audio (Voice)',
+    stopAudio: 'Stop Audio',
+    
+    // Eco-Friendly Section
+    ecoTitle: 'Eco-Friendly & Biological Treatment',
+    ecoSubtitle: 'Prioritize sustainable, non-toxic remedies to protect soil health and beneficial insects',
+    ecoRatingLabel: 'Eco-Safety Rating',
+    ecoDosage: 'Dosage & Preparation',
+    ecoPrecautions: 'Precautions',
+    ecoSafeBadge: '100% Organic & Soil Safe',
+    
+    // Medicine Purchases
+    medicineTitle: 'Recommended Medicines & Purchase Links',
+    medicineSubtitle: 'Order trusted bio-fungicides, organic sprays, and chemical crop protection online',
+    allMedicines: 'All Medicines',
+    ecoMedicines: 'Eco-Friendly & Organic (🌱)',
+    chemMedicines: 'Chemical-Based Medicines (🧪)',
+    medicineTypeOrganic: 'Organic / Bio-Pesticide',
+    medicineTypeChemical: 'Chemical Fungicide',
+    buyAmazon: 'Buy on Amazon',
+    buyFlipkart: 'Buy on Flipkart',
+    chemicalWarning: 'Chemical safety note: Always wear gloves and mask when applying chemical sprays. Do not spray near water sources.',
+    chemicalCautionNote: 'Caution: Follow recommended dilution strictly. Avoid spraying during peak sunshine or windy weather.',
+    
+    // Severity badges
+    sevLow: 'Low Severity',
+    sevMedium: 'Medium Severity',
+    sevHigh: 'High Severity',
+    sevNone: 'Healthy (None)',
+
+    // Alternative Diagnoses & Confidence breakdown
+    alternativeDiagnosesTitle: 'Differential / Alternative Diagnoses',
+    alternativeDiagnosesSubtitle: 'Secondary possibilities based on visible leaf patterns and pathogen symptom overlaps',
+    confidenceTierClear: 'Very Clear Visual Evidence (95-100%)',
+    confidenceTierStrong: 'Strong Evidence with Minor Uncertainty (80-94%)',
+    confidenceTierModerate: 'Moderate Confidence / Symptom Overlap (60-79%)',
+    confidenceTierUncertain: 'Low Confidence / Uncertain Diagnosis (<60%)',
+    
+    // Dashboard & History
+    dashboardTitle: 'Prediction History & Diagnostics Dashboard',
+    dashboardSub: 'Track past scans, search records, and analyze disease distribution across crops',
+    totalScans: 'Total Scans',
+    healthyCrops: 'Healthy Leaf Scans',
+    diseasedCrops: 'Diseased Leaf Scans',
+    highRiskCrops: 'High Severity Cases',
+    searchPlaceholder: 'Search by crop name or disease...',
+    filterCropAll: 'All Crops',
+    filterSevAll: 'All Severities',
+    noHistory: 'No prediction history found yet. Upload a leaf image to start scanning!',
+    clearHistoryBtn: 'Clear History',
+    confirmClear: 'Are you sure you want to clear all prediction history?',
+    viewDetails: 'View Full Analysis',
+    deleteRecord: 'Delete Record',
+    
+    // Charts
+    cropChartTitle: 'Scans by Crop Type',
+    severityChartTitle: 'Disease Severity Breakdown',
+    diseaseChartTitle: 'Top Pathogen Distribution',
+    
+    // Weather & Alerts
+    weatherTitle: 'Real-Time Weather & Disease Outbreak Prediction',
+    weatherSub: 'Current meteorological conditions and forecast-driven crop vulnerability index',
+    temp: 'Temperature',
+    humidity: 'Humidity',
+    rainProb: 'Rainfall Probability',
+    windSpeed: 'Wind Speed',
+    fungalRisk: 'Fungal Spread Risk',
+    pestRisk: 'Pest Outbreak Risk',
+    bacterialRisk: 'Bacterial Rot Risk',
+    weatherAdvisoryTitle: 'Weather-Based Crop Advisory',
+    changeLocation: 'Change Location',
+    detectLocation: 'Detect Current Location',
+    alertsTitle: 'Smart Disease Outbreak Alerts',
+    alertsSub: 'Proactive warnings based on weather patterns and nearby outbreak reports',
+    alertCritical: 'Critical Outbreak Risk',
+    alertWarning: 'Moderate Weather Risk',
+    alertAdvisory: 'Preventive Advisory',
+    dismissAlert: 'Dismiss',
+    
+    // Voice Assistant
+    voiceTitle: 'Kisan Saathi - AI Voice Assistant',
+    voiceSub: 'Ask agricultural questions in Hindi or English using voice or text',
+    voiceListening: 'Listening to your voice... Speak now',
+    voiceSpeaking: 'Speaking answer...',
+    voicePlaceholder: 'Ask anything about crop health, leaf symptoms, dosage, or weather...',
+    voiceSend: 'Ask Kisan AI',
+    voiceMicBtn: 'Click to Speak (Mic)',
+    voiceStopMic: 'Stop Listening',
+    voiceQuick1: 'How to take a clear crop leaf photo?',
+    voiceQuick2: 'How to make Neem Oil spray for plants?',
+    voiceQuick3: 'What should I do if humidity is high?',
+    voiceQuick4: 'How to prevent tomato leaf blight?',
+    
+    // Footer & Guide
+    supportedCropsTitle: 'Supported Crops',
+    supportedCropsList: 'Tomato, Potato, Rice, Wheat, Corn/Maize, Apple, Grape, Cotton, Chili, Sugarcane, Soybean, Onion & more',
+    disclaimer: 'Note: AI recommendations provide advisory diagnostic guidance. Always consult with a local agricultural extension specialist for severe crop infestations.',
+  },
+  hi: {
+    appTitle: 'एआई फसल बीमारी निदान प्रणाली',
+    appSubtitle: 'तेज, एआई-संचालित पत्ती रोग निदान और उपचार सिफारिशों के साथ अपनी फसल की रक्षा करें',
+    navHome: 'मुख्य पृष्ठ',
+    navAnalyze: 'पत्ती की जांच करें',
+    navHistory: 'इतिहास और विश्लेषण',
+    navWeather: 'मौसम और जोखिम',
+    navAlerts: 'रोग चेतावनी (Alerts)',
+    navVoice: 'किसान वॉइस सहायक',
+    navAbout: 'मार्गदर्शिका और जानकारी',
+    
+    // Hero
+    heroBadge: 'स्मार्ट कृषि एआई 🌿',
+    heroTitle: 'आर्टिफिशियल इंटेलिजेंस (AI) द्वारा संचालित त्वरित फसल रोग निदान',
+    heroDesc: 'बीमारियों की पहचान करने, गंभीरता का आकलन करने और जैविक व रासायनिक उपचार प्राप्त करने के लिए प्रभावित फसल की पत्ती की फोटो अपलोड या कैप्चर करें।',
+    startScanBtn: 'अभी पत्ती स्कैन करें',
+    viewDashboardBtn: 'इतिहास और आंकड़े देखें',
+    openVoiceBtn: 'किसान वॉइस सहायक से बात करें',
+    
+    // Quick Features
+    featFastTitle: 'त्वरित निदान',
+    featFastDesc: 'उन्नत कंप्यूटर विज़न का उपयोग करके कुछ ही सेकंड में सटीक बीमारी की पहचान पाएं।',
+    featMultilingualTitle: 'हिंदी और अंग्रेजी',
+    featMultilingualDesc: 'हिंदी और अंग्रेजी का पूर्ण समर्थन ताकि किसान आसानी से उपचार समझ सकें।',
+    featTreatmentTitle: 'कारगर उपाय',
+    featTreatmentDesc: 'चरण-दर-चरण निवारक मार्गदर्शन के साथ जैविक और रासायनिक उपचार।',
+    featWeatherTitle: 'मौसम आधारित चेतावनी',
+    featWeatherDesc: 'तापमान और आर्द्रता के आधार पर फंगस और कीट प्रकोप के जोखिम का पूर्वानुमान लगाएं।',
+    
+    // Sample Test Images
+    samplesTitle: 'या नमूना पत्तियों की तस्वीरों से परीक्षण करें',
+    samplesSub: 'त्वरित प्रदर्शन विश्लेषण चलाने के लिए नीचे दिए गए नमूने की छवि चुनें:',
+    sampleTomato: 'टमाटर - अगेती झुलसा (Early Blight)',
+    samplePotato: 'आलू - पछेती झुलसा (Late Blight)',
+    sampleWheat: 'गेहूं - रतुआ रोग (Rust)',
+    sampleRice: 'चावल - भूरा धब्बा (Brown Spot)',
+    sampleApple: 'सेब - स्वस्थ पत्ती (Healthy)',
+
+    // Uploader
+    uploadTitle: 'फसल की पत्ती की फोटो अपलोड या खींचें',
+    uploadDesc: 'पत्ती की तस्वीर खींचें या फ़ाइल चुनें (JPG, PNG, WEBP, 10MB तक)',
+    takePhoto: 'कैमरे से फोटो लें',
+    browseFiles: 'फोटो फ़ाइल चुनें',
+    analyzingText: 'आर्टिफिशियल इंटेलिजेंस द्वारा पत्ती का विश्लेषण किया जा रहा है... रोगकारकों, गंभीरता और उपचार की पहचान हो रही है',
+    invalidFileType: 'अमान्य फ़ाइल प्रकार। कृपया एक मान्य छवि (JPEG, PNG, WEBP) अपलोड करें।',
+    fileTooLarge: 'फ़ाइल बहुत बड़ी है। अधिकतम आकार 10MB है।',
+    
+    // Result Card
+    resultTitle: 'निदान परिणाम एवं स्वास्थ्य रिपोर्ट',
+    cropType: 'फसल का नाम',
+    diseaseDetected: 'पहचाना गया रोग',
+    healthyStatus: 'स्वस्थ पत्ती पाई गई! 🎉',
+    confidenceScore: 'एआई विशवसनीयता प्रतिशत',
+    severityLabel: 'गंभीरता का स्तर',
+    symptomsTitle: 'देखे गए लक्षण',
+    causesTitle: 'संभावित कारण और रोगजनक',
+    organicTitle: 'पर्यावरण-अनुकूल / जैविक उपचार',
+    chemicalTitle: 'रासायनिक उपचार और कवकनाशी',
+    preventionTitle: 'बचाव के उपाय',
+    summaryTitle: 'सारांश',
+    downloadPdf: 'स्वास्थ्य रिपोर्ट डाउनलोड करें (PDF)',
+    generatingPdf: 'पीडीएफ रिपोर्ट तैयार हो रही है...',
+    reportTitle: 'फसल स्वास्थ्य रोग निदान रिपोर्ट',
+    reportCertificate: 'प्रामाणिक एआई डायग्नोस्टिक प्रमाण-पत्र',
+    generatedOn: 'दिनांक व समय',
+    dosage: 'अनुशंसित खुराक',
+    preparation: 'बनाने एवं छिड़काव की विधि',
+    precautions: 'सावधानियां',
+    printReport: 'रिपोर्ट प्रिंट / सहेजें',
+    analyzeAnother: 'दूसरी फसल की जांच करें',
+    listenAloud: 'आवाज में सुनें (Voice)',
+    stopAudio: 'आवाज बंद करें',
+    
+    // Eco-Friendly Section
+    ecoTitle: 'पर्यावरण-अनुकूल और जैविक उपचार',
+    ecoSubtitle: 'मिट्टी के स्वास्थ्य और मित्र कीटों की सुरक्षा के लिए गैर-विषैले जैविक उपायों को प्राथमिकता दें',
+    ecoRatingLabel: 'इको-सुरक्षा रेटिंग',
+    ecoDosage: 'खुराक और बनाने की विधि',
+    ecoPrecautions: 'सावधानियां',
+    ecoSafeBadge: '100% जैविक और मिट्टी के लिए सुरक्षित',
+    
+    // Medicine Purchases
+    medicineTitle: 'अनुशंसित दवाएं और ऑनलाइन खरीद लिंक',
+    medicineSubtitle: 'विश्वसनीय बायो-फंगीसाइड, जैविक स्प्रे और रासायनिक फसल सुरक्षा उत्पाद ऑनलाइन ऑर्डर करें',
+    allMedicines: 'सभी दवाइयां',
+    ecoMedicines: 'जैविक एवं पर्यावरण-सुरक्षित (🌱)',
+    chemMedicines: 'रासायनिक दवाइयां (🧪)',
+    medicineTypeOrganic: 'जैविक / बायो-कीटनाशक',
+    medicineTypeChemical: 'रासायनिक कवकनाशी',
+    buyAmazon: 'अमेज़न पर खरीदें',
+    buyFlipkart: 'फ्लिपकार्ट पर खरीदें',
+    chemicalWarning: 'रासायनिक सुरक्षा नोट: रासायनिक कीटनाशक छिड़कते समय हमेशा मास्क और दस्ताने पहनें। जल स्रोतों के पास न छिड़कें।',
+    chemicalCautionNote: 'सावधानी: बताई गई मात्रा का ही प्रयोग करें। तेज धूप या तेज हवा में छिड़काव न करें।',
+    
+    // Severity badges
+    sevLow: 'कम गंभीरता (Low)',
+    sevMedium: 'मध्यम गंभीरता (Medium)',
+    sevHigh: 'उच्च गंभीरता (High)',
+    sevNone: 'स्वस्थ (कोई रोग नहीं)',
+
+    // Alternative Diagnoses & Confidence breakdown
+    alternativeDiagnosesTitle: 'वैकल्पिक / संभावित अन्य रोग (Alternative Diagnoses)',
+    alternativeDiagnosesSubtitle: 'समान लक्षणों और पत्ती के धब्बों के आधार पर अन्य संभावित बीमारियां',
+    confidenceTierClear: 'अत्यंत स्पष्ट दृश्य प्रमाण (95-100%)',
+    confidenceTierStrong: 'ठोस प्रमाण, मामूली अनिश्चितता (80-94%)',
+    confidenceTierModerate: 'मध्यम विश्वास / लक्षणों का मेल (60-79%)',
+    confidenceTierUncertain: 'कम स्पष्टता / अनिश्चित जांच (<60%)',
+    
+    // Dashboard & History
+    dashboardTitle: 'पूर्वानुमान इतिहास एवं विश्लेषण डैशबोर्ड',
+    dashboardSub: 'पुराने स्कैन देखें, रिकॉर्ड खोजें और फसलों में बीमारियों के वितरण का विश्लेषण करें',
+    totalScans: 'कुल स्कैन',
+    healthyCrops: 'स्वस्थ पत्ती स्कैन',
+    diseasedCrops: 'रोगग्रस्त पत्ती स्कैन',
+    highRiskCrops: 'गंभीर मामले (High Risk)',
+    searchPlaceholder: 'फसल या बीमारी के नाम से खोजें...',
+    filterCropAll: 'सभी फसलें',
+    filterSevAll: 'सभी गंभीरता स्तर',
+    noHistory: 'अभी तक कोई इतिहास नहीं मिला। स्कैनिंग शुरू करने के लिए पत्ती की छवि अपलोड करें!',
+    clearHistoryBtn: 'इतिहास साफ़ करें',
+    confirmClear: 'क्या आप निश्चित रूप से पूरा इतिहास साफ़ करना चाहते हैं?',
+    viewDetails: 'पूरा विश्लेषण देखें',
+    deleteRecord: 'रिकॉर्ड हटाएं',
+    
+    // Charts
+    cropChartTitle: 'फसल के प्रकार अनुसार स्कैन',
+    severityChartTitle: 'रोग गंभीरता वितरण',
+    diseaseChartTitle: 'प्रमुख रोगों का वितरण',
+    
+    // Weather & Alerts
+    weatherTitle: 'रीयल-टाइम मौसम और फसल रोग पूर्वानुमान',
+    weatherSub: 'वर्तमान मौसम की स्थिति और मौसम-आधारित फसल रोग संवेदनशीलता',
+    temp: 'तापमान',
+    humidity: 'आर्द्रता (नमी)',
+    rainProb: 'बारिश की संभावना',
+    windSpeed: 'हवा की गति',
+    fungalRisk: 'फंगस संक्रमण का जोखिम',
+    pestRisk: 'कीट प्रकोप का जोखिम',
+    bacterialRisk: 'जीवाणु सड़न का जोखिम',
+    weatherAdvisoryTitle: 'मौसम आधारित फसल सलाह',
+    changeLocation: 'स्थान बदलें',
+    detectLocation: 'वर्तमान स्थान पहचानें',
+    alertsTitle: 'स्मार्ट फसल रोग चेतावनी',
+    alertsSub: 'मौसम पैटर्न और आसपास के प्रकोप पर आधारित अग्रिम सूचनाएं',
+    alertCritical: 'अति-गंभीर रोग प्रकोप जोखिम',
+    alertWarning: 'मध्यम मौसम संबंधी जोखिम',
+    alertAdvisory: 'निवारक सलाह',
+    dismissAlert: 'हटाएं',
+    
+    // Voice Assistant
+    voiceTitle: 'किसान साथी - एआई वॉइस सहायक',
+    voiceSub: 'हिंदी या अंग्रेजी में आवाज या लिखकर खेती से जुड़े सवाल पूछें',
+    voiceListening: 'आपकी आवाज सुनी जा रही है... बोलिए',
+    voiceSpeaking: 'जवाब बोला जा रहा है...',
+    voicePlaceholder: 'फसल स्वास्थ्य, पत्तियों के रोग, दवा की खुराक या मौसम के बारे में कुछ भी पूछें...',
+    voiceSend: 'किसान एआई से पूछें',
+    voiceMicBtn: 'बोलने के लिए माइक दबाएं',
+    voiceStopMic: 'सुनना बंद करें',
+    voiceQuick1: 'फसल की पत्ती की साफ फोटो कैसे लें?',
+    voiceQuick2: 'पौधों के लिए नीम के तेल का स्प्रे कैसे बनाएं?',
+    voiceQuick3: 'यदि नमी/आर्द्रता अधिक हो तो क्या करें?',
+    voiceQuick4: 'टमाटर की पत्तियों को झुलसा रोग से कैसे बचाएं?',
+    
+    // Footer & Guide
+    supportedCropsTitle: 'समर्थित फसलें',
+    supportedCropsList: 'टमाटर, आलू, चावल, गेहूं, मक्का, सेब, अंगूर, कपास, मिर्च, गन्ना, सोयाबीन, प्याज और अधिक',
+    disclaimer: 'नोट: एआई सिफारिशें केवल सलाहकारी मार्गदर्शन प्रदान करती हैं। गंभीर फसल प्रकोप के लिए हमेशा स्थानीय कृषि अधिकारी या वैज्ञानिक से संपर्क करें।',
+  }
+};
+
+export function getTranslation(lang: Language, key: keyof typeof translations['en']) {
+  return translations[lang]?.[key] || translations['en'][key] || key;
+}
+
