@@ -1,3 +1,4 @@
+
 # 🌿 AI Crop Disease Detection System
 
 An AI-powered web application for instant crop leaf disease identification, diagnosis, severity grading, and treatment recommendations with bilingual support (**English** and **Hindi**).
@@ -137,3 +138,7 @@ FastAPI Interactive Swagger Docs will be available at `http://localhost:8000/doc
 
 ## 📄 License
 Apache 2.0 License. Built with Google Gemini AI.
+=======
+# ai-crop-disease-detection
+An AI-based web application that detects crop diseases from leaf images and provides disease diagnosis, confidence scores, and treatment recommendations using Google Gemini AI.
+
