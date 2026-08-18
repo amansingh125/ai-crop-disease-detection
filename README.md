@@ -1,5 +1,5 @@
 
-# 🌿 AI Crop Disease Detection System
+#  AI Crop Disease Detection System
 
 An AI-powered web application for instant crop leaf disease identification, diagnosis, severity grading, and treatment recommendations with bilingual support (**English** and **Hindi**).
 
